@@ -6,7 +6,6 @@ def reverse_each_word(string)
 end
 def reverse_each_word(string)
   arr = string.split(' ')
-  s = "";
-  arr.collect{|w| s = s + " " + w.reverse}
-  return s[1,s.length]
+  arr.collect{|w| w.reverse}
+  return arr
 end
